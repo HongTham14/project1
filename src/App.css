@@ -1,0 +1,83 @@
+
+.Contaniner{
+  height: 700px;
+  width: 100%;
+  background-image: url(./images/Layer\ 1.png);
+  background-size: cover;
+}
+.content_login{
+  display: flex;
+  justify-content:flex-end;
+  padding: 10px 100px;
+}
+.login-title{
+ 
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #373839;
+ 
+}
+.lable-login{
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+/* identical to box height */
+
+  letter-spacing: 0.015em;
+  color: #373839;
+  
+}
+.input-login{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #F2F2F2;
+  border-radius: 8px;
+  border-style: solid ;
+  border-width: 0.5px;
+}
+.button-login{
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+  border-radius: 8px;
+  border-style: solid ;
+  border-width: 0.5px;
+
+}
+.P-Login{
+  position: static;
+  width: 101px;
+  height: 20px;
+  left: calc(50% - 101px/2);
+  top: calc(50% - 23px/2);
+  text-align: center;
+  padding: 0px;
+
+  /* LMS Student / Sub-header */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 10px;
+
+}
+
+
