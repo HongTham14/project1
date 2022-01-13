@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, {Component} from "react";
+import { Link } from "react-router-dom";
 
 
 export default class Login extends Component{
@@ -10,15 +11,7 @@ export default class Login extends Component{
             password: this.password,
             
         }
-        axios.post('http://localhost:8000/', data).then(
-            res => {
-                localStorage.setItem('token');
-            }
-        ).catch(
-            err => {
-                console.log(err);
-            }
-        )
+        console.log(data);
     }
     render(){
         return(
@@ -46,6 +39,10 @@ export default class Login extends Component{
                             <input className="input-login" type="password"  placeholder=""
                             onChange={e => this.password = e.target.value }/>
                         </div>
+                        <div className="fogot-password">
+                        <a href="" className="fogot-password-link">Quên mật khẩu?</a>
+                        </div>
+                        
                         
                         <button className="button-login"> <p className="P-Login">Đăng nhập</p></button>
                     </form>
