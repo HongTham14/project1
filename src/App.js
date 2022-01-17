@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter } from 'react-router-dom';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Login from "./components/login.component";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Login from "./components/Signin/login";
+import ForgotPassword from './components/Signin/forgotpassword';
+import TuitionManagement from './components/Tuition/tuitionmanagement';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Login/>
+        <Login/>  
+       {/* <ForgotPassword/>  */}
+      {/* <TuitionManagement/> */}
+
     </div>
     </BrowserRouter>
   );
